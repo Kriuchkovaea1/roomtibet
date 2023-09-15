@@ -1,0 +1,151 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0; }
+
+a {
+  text-decoration: none; }
+
+html {
+  box-sizing: border-box; }
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit; }
+
+body {
+  color: #000;
+  font-family: Nunito Sans, cursive;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.2; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+ul {
+  padding-inline-start: 0;
+  list-style-type: none; }
+
+button {
+  border: none;
+  padding: 0;
+  border-radius: 0;
+  cursor: pointer;
+  font-family: inherit; }
+
+.header {
+  background: url("../../img/back.jpg"); }
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto; }
+
+.logo__img {
+  height: 72px;
+  width: 137px; }
+
+.header__inner-item {
+  display: flex;
+  align-items: center; }
+
+.header__inner {
+  display: flex;
+  color: #FDFDFD;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal; }
+
+.header__inner--top {
+  padding-bottom: 463px;
+  padding-top: 16px; }
+
+.header__inner--bottom {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 82px; }
+
+.menu {
+  display: flex; }
+
+.menu__list {
+  gap: 24px;
+  padding-left: 212px;
+  display: flex;
+  align-items: center; }
+
+.consultation-btn {
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+  background-color: #1A3E3E;
+  border-radius: 4px;
+  color: #FDFDFD;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 125%;
+  letter-spacing: 0.192px; }
+
+.consultation-btn {
+  position: relative;
+  margin-left: 13px;
+  height: 44px; }
+
+.name {
+  font-size: 50px;
+  margin-bottom: 41px;
+  width: 979px; }
+
+.calendar__fields {
+  padding: 40px 43px;
+  width: 1180px;
+  height: 161px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  display: flex;
+  gap: 24px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 150%; }
+
+.calendar__fields-item {
+  height: 52px;
+  width: 270px;
+  border-radius: 8px;
+  background: inherit;
+  padding: 14px 16px;
+  margin-bottom: 8px;
+  cursor: pointer; }
+  .calendar__fields-item::placeholder {
+    color: #FDFDFD; }
+
+.support__text {
+  padding-left: 8px; }
+
+label.input__group {
+  color: #FDFDFD;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%;
+  width: 270px; }
+
+.calendar__fields-item.icon__arrow {
+  background: rgba(255, 255, 255, 0.2) url("../../img/arrow-down.svg") no-repeat center right 16px; }
+
+.calendar__fields-item.icon__calendar {
+  background: rgba(255, 255, 255, 0.2) url("../../img/calendar.svg") no-repeat center right 16px; }
+
+.search-btn {
+  border-radius: 4px;
+  background: #FDFDFD;
+  padding: 16px 36px;
+  height: 52px;
+  color: #1A3E3E;
+  font-size: 16px;
+  font-weight: 700; }
+
+/*# sourceMappingURL=style.css.map */
