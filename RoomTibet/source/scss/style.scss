@@ -292,6 +292,7 @@ label.input__group {
 .popdest__item {
   display: flex;
   gap: 20px;
+  padding-bottom: 50px;
 }
 
 .popdest__img--item {
@@ -302,7 +303,7 @@ label.input__group {
   position: absolute;
   right: 0;
   top: 17%;
-  padding: 4px 8px;
+  padding: 4px 8px 4px 36px;
   color: #1A3E3E;
   font-size: 14px;
   font-weight: 700;
@@ -311,15 +312,105 @@ label.input__group {
   background: rgba(253, 253, 253, 0.40);
   backdrop-filter: blur(2px);
 }
-.popdest__rating::before{
+
+.popdest__rating::before {
   background-image: url(../../img/star.svg);
-  width:16px;
-  height:16px;
-  display:inline-block;
-  vertical-align:bottom;
-}
-.popdest__descr{
+  background-repeat: no-repeat;
+  content: '';
   position: absolute;
-  bottom: 0;
+  right: 31px;
+  bottom: -8px;
+  width: 24px;
+  height: 33px;
+}
+
+.popdest__descr {
+  position: absolute;
+  justify-content: space-between;
+  width: 100%;
+  bottom: 4px;
   display: flex;
+  padding: 20px 32px 23px;
+  border-radius: 0 0 32px 32px;
+  background: rgba(255, 255, 255, 0.20);
+  backdrop-filter: blur(3px);
+  color: #FDFDFD;
+}
+
+.popdest__title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.popdest__text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 128.571%;
+}
+
+.popdest__price {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.30);
+  margin-left: 10px;
+}
+
+.blog__inner{
+  @extend %inner;
+  flex-direction: column;
+  align-items: center;
+  background: #F3F5F4;
+}
+.blog__descr{
+  padding-bottom: 40px;
+}
+.blog__articles{
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 24px 20px;
+}
+.blog__articles--items{
+  display: flex;
+  padding: 16px;
+  border-radius: 10px;
+  background: #FDFDFD;
+
+}
+.article__descr{
+  display: flex;
+  flex-direction: column;
+  padding: 16px 0 16px 24px;
+}
+.article__title{
+  color: #18121E;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 133.333%;
+}
+.article__text{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex: 1 0 0;
+  color: #18121E;
+  font-size: 14px;
+  line-height: 142.857%;
+  padding: 24px 0;
+}
+.article__bottom{
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 142.857%;
+}
+.article__data{
+  color: #F2BE22;
 }
