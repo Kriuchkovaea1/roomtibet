@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "custom-select": "^1.1.15",
+    "moment": "^2.29.4",
+    "swiper": "^10.3.1"
+  }
+}
