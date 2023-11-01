@@ -46,22 +46,23 @@ $('.flowing-scroll').on('click', function () {
     return false;
 });
 
-const swiperOne = new Swiper('.swiper', {
+const swiperBlog = new Swiper('.photos__swiper', {
     loop: true,
-    slidesPerView: 3,
+
+    slidesPerView: 1,
     spaceBetween: 20,
-    pagination: {
-        el: '.swiper-pagination',
-    },
-    breakpoints: {
-        640: {
-            slidesPerView: 3,
-        },
-        480: {
-            slidesPerView: 2,
-        },
-        360: {
-            slidesPerView: 1,
-        },
-    },
+});
+
+const swiperPopDest = new Swiper('.popdest__swiper', {
+    loop: true,
+
+    slidesPerView: 1,
+    spaceBetween: 20,
+});
+
+const swiperBlogArt = new Swiper('.blog__swiper', {
+    loop: false,
+
+    slidesPerView: 1,
+    spaceBetween: 24,
 });
