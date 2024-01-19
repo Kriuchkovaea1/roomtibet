@@ -5,9 +5,11 @@ let el = document.querySelectorAll('.label');
 
 menuBtn.addEventListener('click', () => {
     menuMobile.classList.add('menu--open');
+    document.getElementsByTagName("body")[0].style.overflow = "hidden";
 });
 menuBtnClose.addEventListener('click', () => {
     menuMobile.classList.remove('menu--open');
+    document.getElementsByTagName("body")[0].style.overflow = "auto"
 });
 el.forEach(el =>
     el.addEventListener('click', () => {
@@ -25,6 +27,9 @@ el.forEach(el =>
         el.classList.toggle('active');
 
     }))
+
+
+
 
 $(function () {
     $('input[name="daterange"]').daterangepicker({

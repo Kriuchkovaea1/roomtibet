@@ -680,7 +680,8 @@ body .lock {
     z-index: 5; }
 
   .menu__list.menu--open {
-    transform: translateY(0%); }
+    transform: translateY(0%);
+    padding-top: 50px; }
 
   .menu__list-close {
     display: flex;
